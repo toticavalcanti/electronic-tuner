@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "reload": "adb reverse tcp:8081 tcp:8081 && adb shell input text rr",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "release-android": "react-native run-android --variant=release"
+  },
+  "dependencies": {
+    "pitchfinder": "^2.3.1",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "react-native-recording": "^0.5.1"
+  }
+}
