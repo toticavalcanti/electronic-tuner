@@ -50,7 +50,6 @@ const style = StyleSheet.create({
   meter: {
     height: 200,
     marginBottom: 40,
-    marginTop: 30,
   },
   origin: {
     position: "absolute",
@@ -60,7 +59,7 @@ const style = StyleSheet.create({
     width: 10,
     height: 10,
     borderRadius: 10,
-    backgroundColor: "#121212",
+    backgroundColor: "#37474f",
   },
   pointer: {
     borderTopWidth: 195,
@@ -72,7 +71,7 @@ const style = StyleSheet.create({
     width: 1,
     height: 400,
     borderTopWidth: 10,
-    borderTopColor: "#121212",
+    borderTopColor: "#37474f",
     marginLeft: 4.5,
   },
   strong: {
