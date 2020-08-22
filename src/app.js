@@ -4,11 +4,13 @@ import {
   Text,
   StatusBar,
   StyleSheet,
+  ImageBackground,
   PermissionsAndroid,
 } from "react-native";
 import Tuner from "./tuner";
 import Note from "./note";
 import Meter from "./meter";
+
 
 export default class App extends Component {
   state = {
@@ -43,14 +45,23 @@ export default class App extends Component {
 
   render() {
     return (
-      <View style={style.body}>
+             
+    <View style={style.body}>
+      <ImageBackground
+        source={require("../static/img/diapa-psicodelic-fix.png")}
+        style={style.image}>
+          
         <StatusBar backgroundColor="#000" translucent />
-        <Meter cents={this.state.note.cents} />
+        <Meter cents={this.state.note.cents} style={style.Meter}/>
         <Note {...this.state.note} />
+      
         <Text style={style.frequency}>
           {this.state.note.frequency.toFixed(1)} Hz
         </Text>
-      </View>
+      </ImageBackground>
+    </View>
+      
+      
     );
   }
 }
@@ -60,9 +71,23 @@ const style = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    width: null,
+    height: null,
   },
   frequency: {
     fontSize: 28,
-    color: "#37474f",
+    color: "#121212",
   },
+  image: {
+    justifyContent: "center",
+    alignItems: "center",
+    flex: 1,
+    width: 200,
+    height: 300,
+    marginVertical: 230,
+  },
+  note: {
+    marginVertical: 540,
+  }
+  
 });
