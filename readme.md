@@ -1,13 +1,8 @@
-# react-native-tuner
-A tuner app written in react native, support ios and android.
+# Musical Instruments Tuner
 
-## Download
+## ?? About the project
 
+???? ??Musical Instruments Tuner - this is a simple mobile app for tuning musical instruments, it's an electronic tuner.
 
 ## Screenshots
-
-### Android:
-
-
-### iOS
-
+<img src="https://github.com/toticavalcanti/electronic-tuner/blob/master/static/print-app-screen.png?raw=true" width=300>
